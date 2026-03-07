@@ -1,0 +1,92 @@
+/* App-specific styles */
+
+/* Ensure smooth scrolling behavior */
+html {
+  scroll-behavior: auto;
+}
+
+/* Pin spacer fix for GSAP */
+.pin-spacer {
+  pointer-events: none !important;
+}
+
+.pin-spacer > * {
+  pointer-events: auto !important;
+}
+
+/* Section z-index stacking */
+.section-pinned {
+  will-change: transform;
+}
+
+/* Image loading optimization */
+img {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .headline-xl {
+    font-size: clamp(40px, 8vw, 80px);
+  }
+  
+  .headline-lg {
+    font-size: clamp(32px, 6vw, 64px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-pinned {
+    overflow-y: auto;
+  }
+  
+  .headline-xl {
+    font-size: clamp(32px, 10vw, 56px);
+  }
+  
+  .headline-lg {
+    font-size: clamp(28px, 8vw, 44px);
+  }
+  
+  /* Stack layouts on mobile - use natural flow instead of absolute positioning */
+  #about .about-image,
+  #education .edu-image,
+  #contact-split .contact-image {
+    width: 88vw !important;
+    left: auto !important;
+    height: 40vh !important;
+    position: relative !important;
+  }
+  
+  #about .about-content,
+  #education .edu-content,
+  #contact-split .contact-info {
+    width: 88vw !important;
+    left: auto !important;
+    top: auto !important;
+    position: relative !important;
+  }
+  
+  #about .about-divider,
+  #education .edu-divider,
+  #contact-split .contact-divider {
+    display: none;
+  }
+  
+  #about .about-experience {
+    width: 88vw !important;
+    left: auto !important;
+    top: auto !important;
+    position: relative !important;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
