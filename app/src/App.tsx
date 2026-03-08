@@ -758,9 +758,9 @@ function App() {
               {[
                 { name: '01 — Air-DJ', url: 'https://github.com/newone-prog/Air-DJ' },
                 { name: '02 — SentimentAI', url: 'https://sentimentai-kappa.vercel.app' },
-                { name: '03 — System Architecture', url: '#' },
-                { name: '04 — Hardware Prototyping', url: '#' },
-                { name: '05 — Algorithm Study', url: '#' }
+                { name: '03 — In Progress..', url: '#' },
+                { name: '04 — In Progress..', url: '#' },
+                { name: '05 — In Progress..', url: '#' }
               ].map((item) => (
                 <li key={item.name} className="label-text text-text-secondary hover:text-text-primary transition-colors cursor-pointer">
                   <a href={item.url} target={item.url !== '#' ? '_blank' : undefined} rel={item.url !== '#' ? 'noopener noreferrer' : undefined} className="block w-full">
@@ -870,9 +870,9 @@ function App() {
                   Available for freelance projects, creative collaborations, and visual direction.
                 </p>
                 <div className="space-y-4">
-                  <p className="body-text text-text-primary">hello@reallygreatsite.com</p>
-                  <p className="body-text text-text-primary">+1 (555) 000-0000</p>
-                  <p className="body-text text-text-primary">123 Anywhere St., Any City</p>
+                  <p className="body-text text-text-primary">DEVANSHMEHROTRA2190@GMAIL.COM</p>
+                  <p className="body-text text-text-primary">+91 818 892 4715</p>
+                  <p className="body-text text-text-primary">Prayagraj, Uttar Pradesh, India</p>
                 </div>
               </div>
               <div className="footer-right">
@@ -905,10 +905,10 @@ function App() {
           </div>
           <div className="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
             <div className="flex gap-8">
-              {['Instagram', 'Behance', 'LinkedIn'].map((social) => (
+              {['Github', 'Behance', 'LinkedIn'].map((social) => (
                 <a
                   key={social}
-                  href={`https://${social.toLowerCase()}.com`}
+                  href={`https://linktr.ee/devvzxy`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="label-text text-text-secondary hover:text-text-primary transition-colors"
@@ -956,6 +956,14 @@ function App() {
             >
               Contact
             </button>
+            <a
+              href="https://react-portfolio-devxzzy.vercel.app/#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-display text-5xl md:text-7xl text-text-primary hover:text-silver transition-colors"
+            >
+              Professional
+            </a>
           </div>
         </div>
       )}
